@@ -1,0 +1,233 @@
+3_Implementation/Multifile/EMPLOY(1).c:89:5: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+    gets(e.name);
+    ^
+3_Implementation/Multifile/EMPLOY(1).c:94:5: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+    gets(e.designation);
+    ^
+3_Implementation/Multifile/EMPLOY(1).c:224:2: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+ gets(e.name);
+ ^
+3_Implementation/Multifile/EMPLOY(1).c:228:2: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+ gets(e.designation);
+ ^
+3_Implementation/Multifile/EMPLOY(1).c:87:5: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+    fflush(stdin);
+    ^
+3_Implementation/Multifile/EMPLOY(1).c:92:6: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+     fflush(stdin);
+     ^
+3_Implementation/Multifile/EMPLOY(1).c:222:2: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+ fflush(stdin);
+ ^
+3_Implementation/Multifile/EMPLOY(1).c:167:2: error: Resource leak: ft [resourceLeak]
+ return;
+ ^
+3_Implementation/Multifile/EMPLOY(1).c:256:42: warning: Either the condition 'fp==NULL' is redundant or there is possible null pointer dereference: fp. [nullPointerRedundantCheck]
+    while(fread(&arr[i],sizeof(arr[i]),1,fp)==1)
+                                         ^
+3_Implementation/Multifile/EMPLOY(1).c:250:10: note: Assuming that condition 'fp==NULL' is not redundant
+    if(fp==NULL)
+         ^
+3_Implementation/Multifile/EMPLOY(1).c:256:42: note: Null pointer dereference
+    while(fread(&arr[i],sizeof(arr[i]),1,fp)==1)
+                                         ^
+3_Implementation/Multifile/EMPLOY(1).c:279:12: warning: Either the condition 'fp==NULL' is redundant or there is possible null pointer dereference: fp. [nullPointerRedundantCheck]
+    fclose(fp);
+           ^
+3_Implementation/Multifile/EMPLOY(1).c:250:10: note: Assuming that condition 'fp==NULL' is not redundant
+    if(fp==NULL)
+         ^
+3_Implementation/Multifile/EMPLOY(1).c:279:12: note: Null pointer dereference
+    fclose(fp);
+           ^
+3_Implementation/Multifile/EMPLOY(1).c:23:11: error: Uninitialized variable: ch [uninitvar]
+    while(ch!=7)
+          ^
+3_Implementation/Unity/unity.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 42 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+3_Implementation/Unity/unity.c:276:9: style: The scope of the variable 'nibble' can be reduced. [variableScope]
+    int nibble;
+        ^
+3_Implementation/Unity/unity.c:1351:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+    UNITY_UINT32 i;
+                 ^
+3_Implementation/Unity/unity.c:1391:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+    UNITY_UINT32 i;
+                 ^
+3_Implementation/Unity/unity.c:1515:18: style: The scope of the variable 'bytes' can be reduced. [variableScope]
+    UNITY_UINT32 bytes;
+                 ^
+3_Implementation/Unity/unity.c:1759:28: style:inconclusive: Function 'UnityFail' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void UnityFail(const char* msg, const UNITY_LINE_TYPE line)
+                           ^
+3_Implementation/Unity/unity_internals.h:620:28: note: Function 'UnityFail' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityFail(const char* message, const UNITY_LINE_TYPE line) UNITY_FUNCTION_ATTR(noreturn);
+                           ^
+3_Implementation/Unity/unity.c:1759:28: note: Function 'UnityFail' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityFail(const char* msg, const UNITY_LINE_TYPE line)
+                           ^
+3_Implementation/Unity/unity.c:1796:30: style:inconclusive: Function 'UnityIgnore' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void UnityIgnore(const char* msg, const UNITY_LINE_TYPE line)
+                             ^
+3_Implementation/Unity/unity_internals.h:621:30: note: Function 'UnityIgnore' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityIgnore(const char* message, const UNITY_LINE_TYPE line) UNITY_FUNCTION_ATTR(noreturn);
+                             ^
+3_Implementation/Unity/unity.c:1796:30: note: Function 'UnityIgnore' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityIgnore(const char* msg, const UNITY_LINE_TYPE line)
+                             ^
+3_Implementation/Unity/unity.c:1812:31: style:inconclusive: Function 'UnityMessage' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void UnityMessage(const char* msg, const UNITY_LINE_TYPE line)
+                              ^
+3_Implementation/Unity/unity_internals.h:622:31: note: Function 'UnityMessage' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityMessage(const char* message, const UNITY_LINE_TYPE line);
+                              ^
+3_Implementation/Unity/unity.c:1812:31: note: Function 'UnityMessage' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityMessage(const char* msg, const UNITY_LINE_TYPE line)
+                              ^
+3_Implementation/Unity/unity.c:1432:20: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    UNITY_UINT32 i = 0;
+                   ^
+3_Implementation/Unity/unity.c:1834:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_START' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_START();
+^
+3_Implementation/Unity/unity.c:1844:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_STOP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_STOP();
+^
+3_Implementation/Unity/unity.c:558:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_PRINT_EXEC_TIME' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_PRINT_EXEC_TIME();
+^
+3_Implementation/Unity/unity_internals.h:471:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStartTime;
+^
+3_Implementation/Unity/unity_internals.h:472:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStopTime;
+^
+3_Implementation/Unity/unity.c:1834:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_START' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_START();
+^
+3_Implementation/Unity/unity.c:1844:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_STOP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_STOP();
+^
+3_Implementation/Unity/unity.c:558:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_PRINT_EXEC_TIME' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_PRINT_EXEC_TIME();
+^
+3_Implementation/Unity/unity_internals.h:471:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStartTime;
+^
+3_Implementation/Unity/unity_internals.h:472:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStopTime;
+^
+3_Implementation/src/EMPLOY(1).c:89:5: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+    gets(e.name);
+    ^
+3_Implementation/src/EMPLOY(1).c:94:5: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+    gets(e.designation);
+    ^
+3_Implementation/src/EMPLOY(1).c:224:2: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+ gets(e.name);
+ ^
+3_Implementation/src/EMPLOY(1).c:228:2: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+ gets(e.designation);
+ ^
+3_Implementation/src/EMPLOY(1).c:87:5: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+    fflush(stdin);
+    ^
+3_Implementation/src/EMPLOY(1).c:92:6: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+     fflush(stdin);
+     ^
+3_Implementation/src/EMPLOY(1).c:222:2: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+ fflush(stdin);
+ ^
+3_Implementation/src/EMPLOY(1).c:167:2: error: Resource leak: ft [resourceLeak]
+ return;
+ ^
+3_Implementation/src/EMPLOY(1).c:256:42: warning: Either the condition 'fp==NULL' is redundant or there is possible null pointer dereference: fp. [nullPointerRedundantCheck]
+    while(fread(&arr[i],sizeof(arr[i]),1,fp)==1)
+                                         ^
+3_Implementation/src/EMPLOY(1).c:250:10: note: Assuming that condition 'fp==NULL' is not redundant
+    if(fp==NULL)
+         ^
+3_Implementation/src/EMPLOY(1).c:256:42: note: Null pointer dereference
+    while(fread(&arr[i],sizeof(arr[i]),1,fp)==1)
+                                         ^
+3_Implementation/src/EMPLOY(1).c:279:12: warning: Either the condition 'fp==NULL' is redundant or there is possible null pointer dereference: fp. [nullPointerRedundantCheck]
+    fclose(fp);
+           ^
+3_Implementation/src/EMPLOY(1).c:250:10: note: Assuming that condition 'fp==NULL' is not redundant
+    if(fp==NULL)
+         ^
+3_Implementation/src/EMPLOY(1).c:279:12: note: Null pointer dereference
+    fclose(fp);
+           ^
+3_Implementation/src/EMPLOY(1).c:23:11: error: Uninitialized variable: ch [uninitvar]
+    while(ch!=7)
+          ^
+3_Implementation/Unity/unity.c:685:0: style: The function 'UnityAssertBits' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:904:0: style: The function 'UnityAssertEqualFloatArray' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:774:0: style: The function 'UnityAssertEqualIntArray' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1504:0: style: The function 'UnityAssertEqualMemory' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:706:0: style: The function 'UnityAssertEqualNumber' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1346:0: style: The function 'UnityAssertEqualString' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1425:0: style: The function 'UnityAssertEqualStringArray' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1385:0: style: The function 'UnityAssertEqualStringLen' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:971:0: style: The function 'UnityAssertFloatSpecial' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:952:0: style: The function 'UnityAssertFloatsWithin' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:727:0: style: The function 'UnityAssertGreaterOrLessOrEqualNumber' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1226:0: style: The function 'UnityAssertNumbersArrayWithin' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1179:0: style: The function 'UnityAssertNumbersWithin' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1856:0: style: The function 'UnityBegin' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1828:0: style: The function 'UnityDefaultTestRun' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1872:0: style: The function 'UnityEnd' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1759:0: style: The function 'UnityFail' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1611:0: style: The function 'UnityFloatToPtr' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1796:0: style: The function 'UnityIgnore' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1812:0: style: The function 'UnityMessage' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1585:0: style: The function 'UnityNumToPtr' is never used. [unusedFunction]
+
+^
+3_Implementation/Unity/unity.c:1850:0: style: The function 'UnitySetTestFile' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
