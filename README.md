@@ -6,4 +6,4 @@
 [![cppcheck-action-test](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/c-cpp.yml)
 
 [![Windows C/C++ CI](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/Windows_C_CPP.yml/badge.svg)](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/Windows_C_CPP.yml)
-[![Unit testing C/C++ CI](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/unity.yml/badge.svg)](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/unity.yml)[![Unit testing C/C++ CI](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/unity.yml/badge.svg)](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/unity.yml)
+[![Unit testing C/C++ CI](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/unity.yml/badge.svg)](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/unity.yml)
