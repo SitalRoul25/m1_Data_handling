@@ -7,3 +7,4 @@
 
 [![Windows C/C++ CI](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/Windows_C_CPP.yml/badge.svg)](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/Windows_C_CPP.yml)
 [![Unit testing C/C++ CI](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/unity.yml/badge.svg)](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/unity.yml)
+[![Linux C/C++ CI](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/Linux_C_CPP.yml/badge.svg)](https://github.com/SitalRoul25/m1_Data_handling/actions/workflows/Linux_C_CPP.yml)
